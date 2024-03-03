@@ -1,0 +1,138 @@
+<script>
+let total=0;
+function get(){
+var a=document.getElementById("n1");
+var b=document.getElementById("n2");
+a.style.display="none";
+b.style.display="block";
+}
+
+function right(){
+document.body.style.backgroundColor="green";
+total++;
+}
+
+function wrong(){
+document.body.style.backgroundColor="red";
+}
+
+function result(){
+alert("Total mark:"+total);
+}
+
+</script>
+
+<style>
+.a{
+text-align:center;
+margin-top:300px;
+border:solid 2px black;
+margin:250px 500px 200px 500px;
+padding: 50px 50px 50px 50px;
+}
+.b{
+border:solid 2px black;
+padding: 10px 10px 10px 10px;
+}
+.c{
+border:solid 2px black;
+padding: 10px 10px 10px 10px;
+}
+.d{
+border:solid 2px black;
+padding: 10px 10px 10px 10px;
+}
+</style>
+
+<section id="n1">
+<div class="a">
+<placeholder>Name:  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</placeholder><input type="text"><br><br>
+<placeholder>Register Number: </placeholder><input type="text"><br><br><br>
+<input type="submit" onclick="get()">
+</div>
+</section>
+
+<section id="n2" style="display:none;">
+<div class="b" style=background-Color:#FDF9F9>
+1.Which type is JavaScript?<br><br>
+<input type="submit" value="Object-Oriented  " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Object-Based     " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Assembly-language" onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="High-level       " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="c" style=background-Color:#FDF9F9>
+2.The "function" and " var" are known as:<br><br>
+<input type="submit" value="Keywords             " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Declaration statement" onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Data types           " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Prototypes           " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="d" style=background-Color:#FDF9F9>
+3.In JavaScript the x===y statement implies that:<br><br>
+<input type="submit" value="Both x and y are equal in value, type and reference address as well." onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Both are equal in the value and data type.                          " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Both are x and y are equal in value only.                           " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Both are not same at all.                                           " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+4. Upon encountering empty statements, what does the Javascript Interpreter do?<br><br>
+<input type="submit" value="Throws an error.       " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Ignores the statements." onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Gives a warning.       " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="None of the above.     " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+5. How can a datatype be declared to be a constant type?<br><br>
+<input type="submit" value="const   " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="var     " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="let     " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="constant" onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+6. What keyword is used to check whether a given property is valid or not?<br><br>
+<input type="submit" value="in    " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="is in " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="exists" onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="lies  " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+7. Which one of the following is the correct way for calling the JavaScript code?<br><br>
+<input type="submit" value="Preprocessor    " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Triggering Event" onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="RMI             " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Function/Method " onclick="right()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+8. Which of the following variables takes precedence over the others if the names are the same?<br><br>
+<input type="submit" value="Global variable     " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="The local element   " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="The two of the above" onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="None of the above   " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+9. Which of the following type of a variable is volatile?<br><br>
+<input type="submit" value="Mutable variable  " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Dynamic variable  " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Volatile variable " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Immutable variable" onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+
+<div class="e" style=background-Color:#FDF9F9>
+10.  In the JavaScript, which one of the following is not considered as an error:<br><br>
+<input type="submit" value="Syntax error         " onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Missing of semicolons" onclick="wrong()" style= "height:30px"><br><br>
+<input type="submit" value="Division by zero     " onclick="right()" style= "height:30px"><br><br>
+<input type="submit" value="Missing of Bracket   " onclick="wrong()" style= "height:30px"><br><br>
+</div><br><br>
+<center>
+<input type="submit" onclick="result()">
+</center>
+</section>

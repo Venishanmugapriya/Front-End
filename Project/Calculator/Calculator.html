@@ -1,0 +1,56 @@
+
+<style>
+.a
+{
+border:solid 2px black;
+padding:10px 10px 10px 10px;
+margin:30px 600px 140px 600px;
+height:250px;
+}
+</style>
+<script>
+function get1()
+{
+document.getElementById("n1").value="";
+}
+function get2(a)
+{
+document.getElementById("n1").value+=a;
+}
+function get3()
+{
+let b=document.getElementById("n1").value;
+document.getElementById("n1").value=eval(b).toFixed(2);
+}
+
+</script>
+<center>
+<h1 style="margin-top:160px">CALCULATOR</h1>
+<div class="a"><br><br><br>
+<input type="text"  id="n1">
+<input type="button" value="c" onclick="get1()"><br><br>
+
+<input type="button" value="1" onclick="get2('1')" style="margin-left:0.05px">
+<input type="button" value="2" onclick="get2('2')" style="margin-left:10px">
+<input type="button" value="3" onclick="get2('3')" style="margin-left:10px">
+<input type="button" value="+" onclick="get2('+')" style="margin-left:10px"><br><br>
+
+<input type="button" value="4" onclick="get2('4')" style="margin-left:0.05px">
+<input type="button" value="5" onclick="get2('5')" style="margin-left:10px">
+<input type="button" value="6" onclick="get2('6')" style="margin-left:10px">
+<input type="button" value="-" onclick="get2('-')" style="margin-left:10px"><br><br>
+
+<input type="button" value="7" onclick="get2('7')" style="margin-left:0.05px">
+<input type="button" value="8" onclick="get2('8')" style="margin-left:10px">
+<input type="button" value="9" onclick="get2('9')" style="margin-left:10px">
+<input type="button" value="*" onclick="get2('*')" style="margin-left:10px"><br><br>
+
+<input type="button" value="0" onclick="get2('0')" style="margin-left:0.05px">
+<input type="button" value="." onclick="get2('.')" style="margin-left:10px">
+<input type="button" value="=" onclick="get3()" style="margin-left:10px">
+<input type="button" value="/" onclick="get2('/')" style="margin-left:10px">
+<br>
+</center>
+</div>
+
+
